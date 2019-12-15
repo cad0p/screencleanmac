@@ -1,7 +1,0 @@
-version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "39a7083cfd1e00054ee576b4fd9a0d5e"
-build_time: [1576385025, 385254000]
-inputs:
-  "/Users/piercarlocadoppi/Documents/Flutter/macOS/screencleanmac/macos/Runner/MainFlutterWindow.swift": [1569454668, 409498490]
-  "/Users/piercarlocadoppi/Documents/Flutter/macOS/screencleanmac/macos/Runner/AppDelegate.swift": [1569454668, 406334508]
-  "/Users/piercarlocadoppi/Documents/Flutter/macOS/screencleanmac/macos/Flutter/GeneratedPluginRegistrant.swift": [1576385016, 856942796]

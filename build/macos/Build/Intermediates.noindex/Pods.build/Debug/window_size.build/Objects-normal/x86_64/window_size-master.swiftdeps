@@ -1,5 +1,0 @@
-version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
-options: "b810c1f16b17c7809a2769a14edcc019"
-build_time: [1576382338, 679313000]
-inputs:
-  "/Users/piercarlocadoppi/Documents/Flutter/macOS/plugins/window_size/macos/Classes/WindowSizePlugin.swift": [1576346971, 0]
