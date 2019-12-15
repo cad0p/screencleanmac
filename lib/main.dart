@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:process_run/cmd_run.dart';
 import 'package:process_run/shell.dart';
 import 'package:window_size/window_size.dart';
 
@@ -18,18 +19,18 @@ class MyAppState extends State<MyApp> {
   // This widget is the root of your application.
 
   FocusNode keyEventNode;
-  Shell shell;
+//  Shell shell;
 
   @override
   void initState() {
     super.initState();
 
     keyEventNode = FocusNode();
-    shell = Shell(
-      throwOnError: false,
-      runInShell: true,
-      commentVerbose: true,
-    );
+//    shell = Shell(
+//      throwOnError: false,
+//      runInShell: false,
+//      commentVerbose: true,
+//    );
 
     Future.delayed(Duration.zero).then((finish) async {
       if (Platform.isMacOS) {
@@ -41,12 +42,15 @@ class MyAppState extends State<MyApp> {
           window.screen.frame.width,
           window.screen.frame.height
         ));
+
+        await run('screenclean', ['on'], runInShell: false);
       }
     });
 
 //    shell.run('cp /usr/local/bin/screenclean '
 //      '.');
-    shell.run('screenclean on');
+//    shell.run('screenclean on');
+
 
 
   }
@@ -59,7 +63,8 @@ class MyAppState extends State<MyApp> {
     return RawKeyboardListener(
       onKey: (RawKeyEvent keyEvent) async {
         if (keyEvent.logicalKey.keyLabel == 'q') {
-          await shell.run('screenclean off');
+          await run('screenclean', ['off'], runInShell: false);
+//          await shell.run('screenclean off');
           exit(0);
         }
       },

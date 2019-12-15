@@ -4,12 +4,12 @@ PODS:
     - FlutterMacOS
 
 DEPENDENCIES:
-  - FlutterMacOS (from `Flutter/ephemeral/.symlinks/flutter/darwin-x64`)
+  - FlutterMacOS (from `Flutter/ephemeral/.symlinks/flutter/darwin-x64-release`)
   - window_size (from `Flutter/ephemeral/.symlinks/plugins/window_size/macos`)
 
 EXTERNAL SOURCES:
   FlutterMacOS:
-    :path: Flutter/ephemeral/.symlinks/flutter/darwin-x64
+    :path: Flutter/ephemeral/.symlinks/flutter/darwin-x64-release
   window_size:
     :path: Flutter/ephemeral/.symlinks/plugins/window_size/macos
 
